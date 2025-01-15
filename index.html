@@ -3,62 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
     <title></title>
+    <link rel="stylesheet" href="css/html-reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="desktop-view">
         <div class="main-container">
             <div class="header-container">
-                <button class="header-button">
-                    <img src="assets/panic_logo_cropped.png" width="150px">
-                </button>
+                <a class="header-button" href="https://www.instagram.com/panicroomonline" target="_blank">
+                    <img src="assets/panic_logo_mod.png" width="180px">
+                </a>
             </div>
             <div class="main-logo-container">
-                <img src="assets/all_eyes_on_me_block.png" tag="#main-logo" width="100%">
+                <img src="assets/all_eyes_on_me.gif" tag="#main-logo" width="100%">
             </div>
             <div class="video-element-1">
-                <video autoplay muted loop width="120%">
-                    <source src="assets/nicole_vid_1.mp4" type="video/mp4">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/nijeii_vid_1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="video-element-2">
-                <video autoplay muted loop width="110%">
-                    <source src="assets/nicole_vid_1.mp4" type="video/mp4">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/TBA_vid_1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="video-element-3">
-                <video autoplay muted loop width="110%">
-                    <source src="assets/nicole_vid_1.mp4" type="video/mp4">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/duco_vid_1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="video-element-4">
-                <video autoplay muted loop width="130%">
-                    <source src="assets/nicole_vid_1.mp4" type="video/mp4">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/aura_vid_1.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="video-element-5">
-                <video autoplay muted loop width="130%">
-                    <source src="assets/nicole_vid_1.mp4" type="video/mp4">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/waddle_vid_1.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
         <div class="form-container">
             <div>
                 <div class="text-box">
-                    <p>PLACE SOME CRYPTIC ASS MESSAGE RIGHT FUCKING HERE</p>
+                    <p>*COME DANCE WITH US, YOU'RE BEING WATCHED.<br><br>ALL EYES ON YOU.<br>02/07</p>
+                    <small>*Location of the event will be released with ticket info via</small>
                 </div>
-                <form class="input-form">
-                    <input type="text" id="user-input" placeholder="give us your email" required>
-                    <button type="submit">send</button>
+                <form class="input-form" action="/contact-script.php" method="post">
+                    <input type="text" id="user-input" placeholder="give us your email" name="emailIn" required class="email-input">
+                    <button type="submit" name="submit-mail">submit</button>
                 </form>
             </div>
         </div>
         <div class="footer-container">
             <div class="icon-container">
-            <h2>ICON 1</h2>
-            <h2>ICON 2</h2>
-            <h2>ICON 3</h2>
+                <a class="insta-button" href="https://www.instagram.com/panicroomonline" target="_blank">
+                    <img src="assets/insta_icon.png" width="50px">
+                </a>
+                <a class="youtube-button" href="https://www.youtube.com/@panicroomonline" target="_blank">
+                    <img src="assets/youtube_icon.png" width="50px">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-view">
+        <div class="main-container">
+            <div class="header-container">
+                <a class="header-button" href="https://www.instagram.com/panicroomonline" target="_blank">
+                    <img src="assets/panic_logo_mod.png" width="120px">
+                </a>
+            </div>
+            <div class="main-logo-container">
+                <img src="assets/all_eyes_on_me.gif" tag="#main-logo" width="100%">
+            </div>
+            <div class="video-element-1">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/nijeii_vid_1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-element-2">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/TBA_vid_1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-element-3">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/duco_vid_1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-element-4">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/aura_vid_1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-element-5">
+                <video autoplay muted loop width="100%">
+                    <source src="assets/waddle_vid_1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="form-container">
+                <div class="text-box">
+                    <p>*COME DANCE WITH US, YOU'RE BEING WATCHED.<br><br>ALL EYES ON YOU.<br>02/07</p>
+                    <small>*Location of the event will be released with ticket info via</small>
+                </div>
+                <form class="input-form" action="/contact-script.php" method="post">
+                    <input type="text" id="user-input" placeholder="give us your email" name="emailIn" required class="email-input">
+                    <button type="submit" name="submit-mail">submit</button>
+                </form>
+        </div>
+        <div class="footer-container">
+            <div class="icon-container">
+                <a class="insta-button" href="https://www.instagram.com/panicroomonline" target="_blank">
+                    <img src="assets/insta_icon.png" width="40px">
+                </a>
+                <a class="youtube-button" href="https://www.youtube.com/@panicroomonline" target="_blank">
+                    <img src="assets/youtube_icon.png" width="40px">
+                </a>
             </div>
         </div>
     </div>
