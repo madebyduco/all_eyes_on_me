@@ -99,6 +99,8 @@ small {
     width: 37vw;
     height: auto;
     opacity: 0;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .mobile-view .main-logo-container {
@@ -207,6 +209,30 @@ small {
     opacity: 0;
 }
 
+.arrow-down {
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 1s ease;
+}
+
+.mobile-view .arrow-down {
+    position: absolute;
+    top: 57%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 1s ease;
+}
+
+.arrow-down:hover {
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: transform 1s ease;
+}
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -261,24 +287,25 @@ small {
     background-color: #1f1f1f;
     margin-right: 10px;
     width: 250px;
-    font-family: 'NanumBold', Arial, Helvetica, sans-serif;
+    font-family: 'NanumBold';
 }
 
 .email-input {
-    font-family: 'NanumBold', Arial, Helvetica, sans-serif;
+    font-family: 'NanumBold';
 }
 
 .email-input::placeholder {
-    font-family: 'NanumBold', Arial, Helvetica, sans-serif;
+    font-family: 'NanumBold';
 }
 
 .input-form button {
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 16px;
     background-color: #3c3c3c;
-    color: white;
+    color: rgb(216, 216, 216);
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .input-form .email-input {
@@ -305,6 +332,7 @@ small {
     align-items: center;
     width: 124px;
     padding-right: 30px;
+    padding-left: 30px;
     padding-bottom: 12px;
 }
 
