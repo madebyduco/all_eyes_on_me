@@ -52,7 +52,7 @@
 .loading-screen {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);;
     align-items: center;
     justify-content: center;
 }
@@ -62,7 +62,7 @@ body {
     background-color: #000000;
     text-align: center;
     width: 100vw;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);;
     overflow-x: hidden;
     overflow: hidden;
 }
@@ -102,7 +102,7 @@ small {
 .main-container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);;
     overflow: hidden;
 }
 
@@ -162,7 +162,7 @@ small {
 
 .mobile-view .video-element-2 {
     position: absolute;
-    top: 70%;
+    top: 67%;
     left: 7%;
     width: 50%;
     overflow: hidden;
@@ -199,7 +199,7 @@ small {
 
 .mobile-view .video-element-4 {
     position: absolute;
-    top: 64%;
+    top: 60%;
     left: 48%;
     width: 48%;
     overflow: hidden;
@@ -217,7 +217,7 @@ small {
 
 .mobile-view .video-element-5 {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 45%;
     width: 48%;
     overflow: hidden;
@@ -236,8 +236,8 @@ small {
 
 .mobile-view .arrow-down {
     position: absolute;
-    top: 57%;
-    left: 18%;
+    top: 88%;
+    left: 24%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: transform 1s ease;

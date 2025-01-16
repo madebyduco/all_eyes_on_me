@@ -2,7 +2,7 @@ function applyResponsiveStyles() {
     const desktopView = document.querySelector('.desktop-view');
     const mobileView = document.querySelector('.mobile-view');
 
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth > window.innerHeight) {
         // Desktop View
         desktopView.style.display = 'block';
         mobileView.style.display = 'none';
@@ -11,6 +11,10 @@ function applyResponsiveStyles() {
         desktopView.style.display = 'none';
         mobileView.style.display = 'block';
     }
+}
+
+function adjustViewportHeight() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
 }
 
 function runIntroAnimations() {
@@ -71,6 +75,8 @@ function scrollToContact() {
 
 window.addEventListener('load', applyResponsiveStyles);
 window.addEventListener('resize', applyResponsiveStyles);
+window.addEventListener('load', adjustViewportHeight);
+window.addEventListener('resize', adjustViewportHeight);
 
 window.onload = function () {
     const loadingScreen = document.querySelector('.loading-screen');
