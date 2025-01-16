@@ -26,7 +26,12 @@
     }
     .mobile-view {
         display: none; /* Hide mobile-view class */
-    };
+    }
+    .loading-view {
+        width: 15%;
+        z-index: 9999;
+        background-color: transparent;
+    }
 }
 
 /* For Mobile View (screen width < 768px) */
@@ -37,6 +42,19 @@
     .desktop-view {
         display: none; /* Hide desktop-view class */
     }
+    .loading-view {
+        width: 30%;
+        z-index: 9999;
+        background-color: transparent;
+    }
+}
+
+.loading-screen {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
@@ -46,10 +64,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-}
-
-body.lock-scroll {
-    overflow: hidden; /* Disables scrolling */
+    overflow: hidden;
 }
 
 h1 {
@@ -215,6 +230,7 @@ small {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    overflow: hidden;
     transition: transform 1s ease;
 }
 
@@ -319,7 +335,7 @@ small {
 
 .footer-container {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     height: 11vh;
     width: 100vw;
